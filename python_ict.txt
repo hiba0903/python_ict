@@ -1,0 +1,148 @@
+1. WRITE THE OUTPUT OF THE FOLLOWING
+	k=['a','b','c','d','e']
+	print(k[-1:-7:-1])
+
+['e', 'd', 'c', 'b', 'a']
+
+2.REVERSE A LIST USING PYTHON
+	list1=[100,200,300,400,500]
+
+list1=[100,200,300,400,500]
+list1.reverse()
+print(list1)	
+	
+[500, 400, 300, 200, 100]
+
+4.WRITE A PROGRAM TO FIND THE SQUARE OF 5
+
+x=5
+print(x**2)
+
+25
+
+7. WRITE A PYTHON PROGRAM TO CONSTRUCT THE FOLLOWING PATTERN USING A NESTED FOR LOOP
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+for i in range(0,5):
+	for j in range(0,i):
+		print('*',end='')
+	print("\r")
+for i in range(0,5):
+	for j in range(i,5):
+		print('*',end='')
+	print("\r")
+
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+8.WRITE A PYTHON FUNTION TO CALCULATE THE FACTORIAL
+
+
+print("\tFACTORIAL")
+def factorial():
+	num=int(input("Enter the number:\t"))
+	fact=0
+	for i in range(0,num):
+		fact=num*(num-1)
+		return fact
+print("The factorial of the number is",factorial())
+
+
+	FACTORIAL
+Enter the number:	3
+The factorial of the number is 6
+
+10.WRITE A PROGRAM TO ACCEPT STRING FROM THE USER AND DISPLAY CHARACTERS THAT ARE PRESENT AT AN EVEN INDEX NUMBER
+
+word=input("Enter the string:\t")
+print(word[1::2])
+
+Enter the string:	helloworld
+elwrd
+
+11.WRITE A PYTHON PROGRAM TO PRINT THE NUMBERS FROM A GIVEN NUMBER N TIL 0 USING RECURSION
+
+def countdown(n):
+	print(n)
+	if n!=0:
+		countdown(n-1)
+	
+n=int(input("Enter the number:\t"))
+countdown(n)
+
+Enter the number:	3
+3
+2
+1
+0
+
+
+13.WRITE A WHILE LOOP TO DISPLAY ONLY ALPHABETS FROM A STRING.
+
+word=input("Enter the string to be checked:\t")
+alpha=""
+for char in word:
+	if char.isalpha():
+		alpha+=char
+print(alpha)
+
+
+Enter the string to be checked:	hello123@hi
+hellohi
+
+15.PYTHON PROGRAM TO CONVERT THE TEMPERATURE IN DEGREE CENTIGRADE TO FAHRENHEIT AND VICEVERSA
+
+while True:
+	print("\t\tMENU\n\n\t1.Change to celsius\t2.Change to Fahrenheit\n")
+	choice=int(input("Enter your choice:\t" ))
+	if choice==1:
+		temp=int(input("Enter the temperature in Fahrenheit:\t"))
+		temp=(temp-32)*5/9
+		print("\nThe temp in Fahrenheit is",temp)
+	elif choice==2:
+		temp=int(input("Enter the temperature in Celsius :\t"))
+		temp=(temp*9/5)+32
+		print("\nThe temp in Celsius is ",temp)
+	else:
+		exit() 
+		
+		
+		MENU
+	
+	1.Change to celsius	2.Change to Fahrenheit
+
+Enter your choice:	1
+Enter the temperature in Fahrenheit:	86
+
+The temp in Fahrenheit is 30.0
+		MENU	
+	
+	1.Change to celsius	2.Change to Fahrenheit
+	
+Enter your choice:	2
+Enter the temperature in Celsius :	50
+
+The temp in Celsius is  122.0
+		MENU
+		
+	1.Change to celsius	2.Change to Fahrenheit
+Enter your choice:	5
+
+
